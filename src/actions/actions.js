@@ -22,3 +22,22 @@ export function removeComment(index) {
         index: index
     }
 }
+export function postsFetchData(url) {
+    console.log('inisde psts fetch data')
+    return (dispatch) => {
+       
+        fetch(url)
+            .then((response) => {
+                return response;
+            })
+            .then((response) => response.json())
+            .then((items) => dispatch(postsFetchDataSuccess(items)))
+            
+    };
+}
+export function postsFetchDataSuccess(items){
+     return {
+        type: 'POSTS_FETCH_DATA_SUCCESS',
+        items
+    };
+}

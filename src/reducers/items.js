@@ -115,6 +115,9 @@
 
 export default function posts(state = [], action) {
     switch (action.type) {
+        case 'POSTS_FETCH_DATA_SUCCESS':
+            return action.items;
+
         case 'INCREMENT_LIKES':
             // console.log('within the post reducer');
            

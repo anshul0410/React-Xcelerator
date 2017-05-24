@@ -7,7 +7,8 @@ var defaultState = {posts, comments};
 export default function configureStore(initialState) {
     return createStore(
         rootReducer,
-        defaultState,
+        initialState,
+        // defaultState,
         applyMiddleware(thunk)
     );
 }
