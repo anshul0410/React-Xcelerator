@@ -1,0 +1,105 @@
+#loginButton {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#loginBackground {
+    background-color: #C0BBC5;
+}
+
+body {
+    background-color: #C0BBC5;
+    height: 100%;
+    bottom:0;
+}
+
+.traderDesktop {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 70px;
+    font-family: Arial;
+}
+
+.headerDiv{
+    border-bottom: 1px solid black;
+     height: 35px;
+}
+
+#headerUserName {
+    font-size: 16px;
+    font-style: italic;
+}
+
+#headerTitle {
+    font-size: 16px;
+    padding: 5px;
+}
+
+#signOut {
+    font-size: 12px;
+    color: #0000ff;
+    padding: 4px 0px 0px 10px;
+}
+
+.traderTaskbarButton {
+    height: 25px;
+    color: white;
+    background-color: black;
+    margin: 5px;
+}
+
+.tableHeader {
+    background-color: gray;
+}
+
+.navButton-black {
+    height: 25px;
+    background-color: black;
+    margin: 5px;
+}
+
+.navButton-black:focus {
+    filter:invert(100%);
+}
+
+
+
+.nav-image-black{
+        filter: invert(100%);
+}
+
+#creationTimeId {
+    display: inline-block;
+}
+
+.test-legend-class{
+    padding-left: 0px;
+    display: inline;
+    margin-top: 5px;
+}
+.legendDiv{
+     margin-top: 50px;
+       margin-left: 150px;
+     
+}
+.chartDiv{
+    background-color: #ffffff;
+    height:100%;
+    min-height: 650px;
+}
+
+.quantityDiv{
+    height: 49px;
+}
+.traderTable{
+    background-color: #ffffff;
+}
+.react-bs-table{
+    width:100%;
+}
+.react-bs-table-container{
+   
+}
+#image-table-toggle{
+        filter: invert(100%);
+}
