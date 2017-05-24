@@ -16,7 +16,7 @@ export class AlbumComponent extends React.Component{
                     })
         return (
             <div>
-                <h1 className="text-center">Latest News Updates</h1>
+                <h1 className="text-center bg-info">Latest News Updates</h1>
                 {photoDetail}
             </div>
         );

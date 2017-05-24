@@ -4,8 +4,7 @@ import React from 'react';
 render(){
     console.log(this.props,'asd');
      return (
-        <div className="container-fluid ">
-            <h1>check Route</h1>
+        <div className="container-fluid ">        
             {React.cloneElement(this.props.children,this.props)}
         </div>
         )

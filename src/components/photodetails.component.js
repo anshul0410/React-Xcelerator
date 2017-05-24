@@ -22,23 +22,30 @@ export class PhotoDetails extends React.Component{
         this.setState({status:-1});
     }
     render(){
-
+        console.log(this.props.post.content);
+        //  var value=  this.props.post.content;
+        // valu=value.substring(0,250);
         return (
-            <div className="">
-                <div className="">
+            <div className="row  ">
+                <div className="col-xs-12 col-sm-12 newsBlocks">
                     <Link to={`/view/${this.props.post.code}`}>
-                    <img src={this.props.post.display_src} height="100px" width="100px"/>
+                    <img src={this.props.post.display_src} height="400px" className="col-xs-12 col-sm-6 imageNews"/>
                     </Link>
-                </div>
-                <div>
-                     <p>{this.props.post.caption}</p>
-                     <div className="">
+                <div className="col-xs-12 col-sm-6">
+                     <h3 className="col-xs-12 col-sm-12">{this.props.post.heading}</h3>
+                     <p className="col-xs-12 col-sm-12">{this.props.post.content}</p>
+                     <div className="col-xs-12 col-sm-12">
                         <p> Likes: {this.props.post.likes}</p>
                         <button className="" onClick={this.incrementLikes}>Like</button>
                         <button className="" onClick={this.decrementLikes}>unlike</button>
                      </div>
                 </div>
+                </div>
             </div>
         );
     }
+    
 }
+// PhotoDetails.defaultProps={
+//    value: ''
+// };

@@ -1,4 +1,15 @@
-#loginButton {
+.newsBlocks{
+    margin:10px;
+    border-radius: 2%;
+    box-shadow: 2px 2px 2px grey;
+    
+
+}
+.imageNews{
+    border-radius:3%;
+}
+
+/*#loginButton {
     background-color: #000000;
     color: #ffffff;
 }
@@ -102,4 +113,4 @@ body {
 }
 #image-table-toggle{
         filter: invert(100%);
-}
+}*/
