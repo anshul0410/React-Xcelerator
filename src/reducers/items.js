@@ -117,7 +117,7 @@ export default function posts(state = [], action) {
     switch (action.type) {
         case 'INCREMENT_LIKES':
             // console.log('within the post reducer');
-            // // but change the current state to a new state and return
+           
             // console.log(action);
             // console.log(state);
             var indexInc = action.index;
@@ -138,14 +138,7 @@ export default function posts(state = [], action) {
             return state;
     }
     // console.log('within the post reducer');
-    // // but change the current state to a new state and return
+    
     // console.log(action);
     // return state;
 }
-// right now we have not defined any action still the default action is shown in console.log 
-// here we take the index of the element photo on c=which we cliked and want ot incresase the likes
-// now we return the state now using ...state.slice(0,index)--- we are making the update on the store 
-// we keep the things as it is using above line till index
-// then on index element we use {} as we want to update the likes in this index
-// {...state[index], likes: state[index].likes+1}-- here state[index] shows the properties of the state[index]
-// now we update the like property and increment it

@@ -9,8 +9,7 @@ export class AlbumComponent extends React.Component{
         return (
             <div>
                 <h1>I am album Component</h1>
-                {/*<h1>hh</h1>*/}
-                {/*} {JSON.stringify(this.props.myposts)}  */}
+               
                 {photoDetail}
             </div>
         );
