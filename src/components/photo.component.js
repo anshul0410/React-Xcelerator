@@ -1,5 +1,6 @@
 import React from 'react';
 import {PhotoDetails} from './photodetails.component';
+import AppBar from 'material-ui/AppBar';
 export class PhotoComponent extends React.Component{
     constructor(props){
         super(props);
@@ -10,7 +11,7 @@ export class PhotoComponent extends React.Component{
         var currPost= this.props.myposts[index];
         return (
             <div>
-                <h1>I am photo Component</h1>
+                 <AppBar title={<h3 className="text-center">News In Short</h3>}/>
                 <PhotoDetails post={currPost}{...this.props} i={index}/>
             </div>
         );

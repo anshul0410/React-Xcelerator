@@ -2,9 +2,11 @@
     margin:10px;
     border-radius: 2%;
     box-shadow: 2px 2px 2px grey;
-    
-
 }
+/*.newsBlocks:hover{
+    z-index:5;
+    transition: 0.5s; 
+}*/
 .imageNews{
     border-radius:3%;
 }

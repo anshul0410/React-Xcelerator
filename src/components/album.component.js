@@ -1,5 +1,6 @@
 import React from 'react';
 import {PhotoDetails} from './photodetails.component';
+import AppBar from 'material-ui/AppBar';
 export class AlbumComponent extends React.Component{
     constructor(props){
         super(props);
@@ -16,8 +17,11 @@ export class AlbumComponent extends React.Component{
                     })
         return (
             <div>
-                <h1 className="text-center bg-info">Latest News Updates</h1>
+            <AppBar title={<h3 className="text-center">News In Short</h3>}/>
+            <div className="container">
+                {/*<h1 className="text-center bg-info">Latest News Updates</h1>*/}
                 {photoDetail}
+            </div>
             </div>
         );
     }
