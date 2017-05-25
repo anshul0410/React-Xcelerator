@@ -18,7 +18,7 @@ export class AlbumComponent extends React.Component{
         return (
             <div>
             <AppBar title={<h3 className="text-center">News In Short</h3>}/>
-            <div className="container">
+            <div className="row">
                 {/*<h1 className="text-center bg-info">Latest News Updates</h1>*/}
                 {photoDetail}
             </div>

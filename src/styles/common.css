@@ -1,7 +1,10 @@
 .newsBlocks{
-    margin:10px;
+    /*margin:10px;*/
     border-radius: 2%;
     box-shadow: 2px 2px 2px grey;
+    padding-left:0px;
+    height:850px;
+    margin-top:10px;
 }
 /*.newsBlocks:hover{
     z-index:5;

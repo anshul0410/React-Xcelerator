@@ -31,33 +31,51 @@ export class PhotoDetails extends React.Component{
         // valu=value.substring(0,250);
         var currentLocation = this.props.location.pathname;
         var contentToDisplay;
+        var displayFormat;
         console.log(currentLocation);
         if(currentLocation=='/'){
-            contentToDisplay= <p className="col-xs-12 col-sm-12">{this.props.post.short}</p>
-        }
-        else{
-            contentToDisplay= <p className="col-xs-12 col-sm-12">{this.props.post.content}</p>;
-        }
-        return (
-            <div className="row  ">
-                <div className="col-xs-12 col-sm-12 newsBlocks">
+            contentToDisplay= <p className="col-xs-12 col-sm-12">{this.props.post.short}</p>;
+            displayFormat=  <div className="col-xs-12 col-sm-3 newsBlocks">
                     <Link to={`/view/${this.props.post.code}`}>
-                    <img src={this.props.post.display_src} height="400px" className="col-xs-12 col-sm-6 imageNews"/>
+                    <img src={this.props.post.display_src} height="300px" className="col-xs-12 col-sm-12 imageNews"/>
                     </Link>
-                <div className="col-xs-12 col-sm-6">
+                    <div className="col-xs-12 col-sm-12">
                      <h3 className="col-xs-12 col-sm-12">{this.props.post.heading}</h3>
                      {/*<p className="col-xs-12 col-sm-12">{this.props.post.short}</p>*/}
                      {contentToDisplay}
-                     <div className="col-xs-12 col-sm-12">
-                        <p> <b className="text-success">Likes: {this.props.post.likes}</b></p>
-                        <Checkbox label="Bookmark?" />
-                        <p><b className="text-info">What do you think about this news?</b></p>
-                        <FlatButton className="" primary={true} onClick={this.incrementLikes}>Like</FlatButton>
-                        <FlatButton className="" secondary={true} onClick={this.decrementLikes}>unlike</FlatButton>
-                        
-                     </div>
+                         <div className="col-xs-12 col-sm-12">
+                            <p> <b className="text-success">Likes: {this.props.post.likes}</b></p>
+                            <Checkbox label="Bookmark?" />
+                            <p><b className="text-info">What do you think about this news?</b></p>
+                            <FlatButton className="" primary={true} onClick={this.incrementLikes}>Like</FlatButton>
+                            <FlatButton className="" secondary={true} onClick={this.decrementLikes}>unlike</FlatButton>    
+                         </div>
+                    </div>
+                </div>;
+        }
+        else{
+            contentToDisplay= <p className="col-xs-12 col-sm-12">{this.props.post.content}</p>;
+            displayFormat= <div className="col-xs-12 col-sm-12 newsBlocks">
+                    <Link to={`/view/${this.props.post.code}`}>
+                    <img src={this.props.post.display_src} height="300px" className="col-xs-12 col-sm-6 imageNews"/>
+                    </Link>
+                    <div className="col-xs-12 col-sm-6">
+                     <h3 className="col-xs-12 col-sm-12">{this.props.post.heading}</h3>
+                     {/*<p className="col-xs-12 col-sm-12">{this.props.post.short}</p>*/}
+                     {contentToDisplay}
+                         <div className="col-xs-12 col-sm-12">
+                            <p> <b className="text-success">Likes: {this.props.post.likes}</b></p>
+                            <Checkbox label="Bookmark?" />
+                            <p><b className="text-info">What do you think about this news?</b></p>
+                            <FlatButton className="" primary={true} onClick={this.incrementLikes}>Like</FlatButton>
+                            <FlatButton className="" secondary={true} onClick={this.decrementLikes}>unlike</FlatButton>    
+                         </div>
+                    </div>
                 </div>
-                </div>
+        }
+        return (
+            <div className="  ">
+                {displayFormat}
                 {/*<Card >
     
     <CardMedia>
